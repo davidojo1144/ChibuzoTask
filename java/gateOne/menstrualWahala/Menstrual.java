@@ -28,6 +28,20 @@ public static void main(String...args){
 
 	System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
+	System.out.println("Before you proceed we'd love to know your age");
+	System.out.println("Enter your age: ");
+	int ageInput = scanner.nextInt();
+
+	if (ageInput < 12) {
+	System.out.println("You are not old enough to see your menstrual cycle");
+	}
+
+	else if (ageInput > 50) {
+	System.out.println("You are too old enough to see your menstrual cycle");
+	}
+
+	else {
+
 	System.out.println("Enter the last date you had your menstrual cycle(using this format yyyy-MM-dd): ");
 	String menstrualDateInput = scanner.next();
 	LocalDate dateOfStart = LocalDate.parse(menstrualDateInput, yearMonthDay);
@@ -64,31 +78,10 @@ public static void main(String...args){
 
 	System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
-	System.out.println("Enter your age: ");
-	int age = scanner.nextInt();
-
-	int child = 11;
-	int adult = 25;
-	int old = 45;
-
-	if(age <= child){
-	System.out.println("You are too young to menstrate");
-	} 
-
-	else if(age == adult || age <= 44){
-	System.out.println("You are old enough to see your menstrual cycle");
-	}
-
-	else if(age == old || age <= 100){
-	System.out.println("You are at your menopause stage and you can't menstrate no more");
-	}
-
-	else{
-	System.out.println("Guess you inputted a funny age");
-	}
-
+	
 	System.out.println("===================================================================================");
 	System.out.println("===================================================================================");
+	}
 	
 	
 	}
