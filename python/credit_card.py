@@ -1,4 +1,4 @@
-card_details = str(input("Enter your credit card details: "))
+card_details = input("Enter your credit card details: ")
 numbers = [int(num)for num in card_details] 
 if(len(numbers) < 13 or len(numbers) > 16):
 	print("Card Invalid")

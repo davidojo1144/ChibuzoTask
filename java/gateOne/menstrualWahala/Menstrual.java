@@ -73,9 +73,9 @@ public static void main(String...args){
 
 	if(age <= child){
 	System.out.println("You are too young to menstrate");
-	}
+	} 
 
-	else if(age == adult || age <= 34){
+	else if(age == adult || age <= 44){
 	System.out.println("You are old enough to see your menstrual cycle");
 	}
 

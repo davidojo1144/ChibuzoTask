@@ -38,6 +38,7 @@ print(f"\t\t\t\t{pieces} \n\t\t\t\t{pieces2}")
 print(f"\t\t\t\t\t{unit} \n\t\t\t\t\t{unit2}")
 print(f"\t\t\t\t\t\t{total1} \n\t\t\t\t\t\t{total2}") 
 
+ 
 
 
 
