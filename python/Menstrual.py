@@ -30,7 +30,7 @@ print()
 	
 while True:
 	user_input = input("would you love to continue or you'd love to check some other time(Reply with a yes or no): ")
-	if user_input == "yes":
+	if user_input == "yes" or user_input == "YES" :
 		user_flow_period = int(input("How long is your flow period:\n "))
 		delta3 = timedelta(user_flow_period)
 		flow_period = next_menstrual + delta3
@@ -47,7 +47,7 @@ while True:
 		print("Your next ovulation should be around: ", ovulation_period)
 		print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
-	elif user_input == "no":
+	elif user_input == "no" or user_input == "NO" :
 		break
 
 	else:

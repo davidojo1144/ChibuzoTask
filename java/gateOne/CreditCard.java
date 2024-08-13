@@ -9,11 +9,10 @@ public static void main(String...args){
 	String cardInput = sc.next();
 
 	if (cardInput.length()  <  13 || cardInput.length()  >  16){
-	//System.out.println("Invalid");
-	//}
-	//else{
-	//System.out.println("Valid");
+	System.out.println("Invalid");
 	}
+
+	else{
 
 	System.out.println();
 	System.out.println();
@@ -57,7 +56,7 @@ public static void main(String...args){
 	int numbers = Integer.parseInt(String.valueOf(cardInput.charAt(index)));
 	oddValue += numbers;
 	}
-	//System.out.println("The oddvalue is: " + oddValue);
+	// System.out.println("The oddvalue is: " + oddValue);
 
 
 	System.out.println("**Credit Card Number: " + cardInput);
@@ -74,6 +73,8 @@ public static void main(String...args){
 	}
 
 	System.out.println("*********************************************************");
+
+	}
 
 	}
 

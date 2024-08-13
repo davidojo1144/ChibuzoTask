@@ -14,22 +14,23 @@ public static void main(String...args){
 	System.out.println("===================================================================================");
 
 	LocalDate date = LocalDate.now();    
-    	LocalDate yesterday = date.minusDays(1);    
-    	LocalDate tomorrow = date.plusDays(1);
+    	//LocalDate yesterday = date.minusDays(1);    
+    	//LocalDate tomorrow = date.plusDays(1);
 	
-	System.out.println("Today date: " + date);    
-    	System.out.println("Yesterday date: " + yesterday);    
-    	System.out.println("Tomorrow date: " + tomorrow); 
+	System.out.println("Today's date is: " + date);    
+    	//System.out.println("Yesterday date: " + yesterday);    
+    	//System.out.println("Tomorrow date: " + tomorrow); 
 
 	System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
-	System.out.println("Welcome to your menstrual cycle App");
+	System.out.println("Welcome to SEMICOLON menstrual cycle App");
 	System.out.println("Get details about your menstrual cycle below");
 
 	System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
 	System.out.println("Before you proceed we'd love to know your age");
-	System.out.println("Enter your age: ");
+
+	System.out.println("Please enter your age: ");
 	int ageInput = scanner.nextInt();
 
 	if (ageInput < 12) {
@@ -40,13 +41,15 @@ public static void main(String...args){
 	System.out.println("You are too old enough to see your menstrual cycle");
 	}
 
+	
 	else {
 
 	System.out.println("Enter the last date you had your menstrual cycle(using this format yyyy-MM-dd): ");
 	String menstrualDateInput = scanner.next();
 	LocalDate dateOfStart = LocalDate.parse(menstrualDateInput, yearMonthDay);
 
-	int menstruationNextDays = 30;
+	System.out.println("Enter how long your menstrual cycle last: ");
+	int menstruationNextDays = scanner.nextInt();
 
 	LocalDate nextMenstrualCycle = dateOfStart.plusDays(menstruationNextDays);
 	System.out.println("Your next menstrual cycle begins on:  " + nextMenstrualCycle);
@@ -74,7 +77,7 @@ public static void main(String...args){
 	int safePeriod = 7;
 
 	LocalDate safestPeriod = dateOfStart.minusDays(safePeriod);
-	System.out.println("Your safest period to have sex is:  " + safestPeriod);
+	System.out.println("Your safest period to have sex is:  " + safestPeriod + " so condom is not needed or contraceptive pills");
 
 	System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>");
 
